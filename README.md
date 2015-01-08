@@ -17,23 +17,23 @@ It's simply because that we will never like the codes below:
 
 ## Builder and Syntax
 
-1. CATLayout from -[UIView cat_layout]
+1\. CATLayout from -[UIView cat_layout]
 
-syntax: <#from attribute#>.<#relation#>.<#multiplier#>.<#to attribute of view#>.<#constant#>
+	syntax: <#from attribute#>.<#relation#>.<#multiplier#>.<#to attribute of view#>.<#constant#>
 
-example: view.cat_layout.width.equal.multiply(0.5f).widthOf(container).constant(8)
+	example: view.cat_layout.width.equal.multiply(0.5f).widthOf(container).constant(8)
 
-2. CATPin from -[UIView cat_pin]
+2\. CATPin from -[UIView cat_pin]
 
-syntax: <#width or height#>.<#relation#>.<#multiplier#>.<#to/than view#>.<#constant#>
+	syntax: <#width or height#>.<#relation#>.<#multiplier#>.<#to/than view#>.<#constant#>
 
-example: view.cat_pin.height.to(container).constant(-16)
+	example: view.cat_pin.height.to(container).constant(-16)
 
-3. CATAlign -[UIView cat_align]
+3\. CATAlign -[UIView cat_align]
 
-syntax: <#attribute#>.<#relation#>.<#to/than view#>.<#constant#>
+	syntax: <#attribute#>.<#relation#>.<#to/than view#>.<#constant#>
 
-example: view.cat_align.left.to(container).constant(8)
+	example: view.cat_align.left.to(container).constant(8)
 
 Much like natural language, isn't it?
 
@@ -44,21 +44,22 @@ Much like natural language, isn't it?
 
 All these builder classes support 3 ways to build the constraint:
 
-1. - (NSLayoutConstraint *)constraint;
+1\. - (NSLayoutConstraint *)constraint;
 
-which create and return the constraint;
+	which create and return the constraint;
 
-2. - (NSLayoutConstraint *)setInView:(UIView *)container;
+2\. - (NSLayoutConstraint *)setInView:(UIView *)container;
 
-which create and add the constraint to container view then return it;
+	which create and add the constraint to container view then return it;
 
-3. - (NSLayoutConstraint *)set;
+3\. - (NSLayoutConstraint *)set;
 
-which create and add the constraint to the nearest common ancestor of fromView and toView then return it
+	which create and add the constraint to **the nearest common ancestor of fromView and toView** then return i.
 
 ### Copying and Reverse Supported
 
-You could use -reverse method to avoid some constraint conflict.
+You could use *-reverse* method to avoid some constraint conflict.
 
+---
 
-## Keep Constraints Simple. Have fun.
+Checkout the project to run the demo. Keep constraints simple. Have fun!
