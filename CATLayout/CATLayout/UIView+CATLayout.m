@@ -194,6 +194,14 @@
     self.fromAttribute = NSLayoutAttributeBaseline;
     return self;
 }
+- (CATLayout *)firstBaseline {
+    self.fromAttribute = NSLayoutAttributeFirstBaseline;
+    return self;
+}
+- (CATLayout *)lastBaseline {
+    self.fromAttribute = NSLayoutAttributeLastBaseline;
+    return self;
+}
 
 - (CATLayout *)centerX {
     self.fromAttribute = NSLayoutAttributeCenterX;
@@ -518,6 +526,14 @@
 }
 - (CATAlign *)baseline {
     self.fromAttribute = self.toAttribute = NSLayoutAttributeBaseline;
+    return self;
+}
+- (CATAlign *)firstBaseline {
+    self.fromAttribute = self.toAttribute = NSLayoutAttributeFirstBaseline;
+    return self;
+}
+- (CATAlign *)lastBaseline {
+    self.fromAttribute = self.toAttribute = NSLayoutAttributeLastBaseline;
     return self;
 }
 

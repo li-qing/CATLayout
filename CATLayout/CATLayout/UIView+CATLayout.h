@@ -89,6 +89,10 @@
 @property (nonatomic, readonly) CATLayout *trailing;
 /** set from attribute to baseline */
 @property (nonatomic, readonly) CATLayout *baseline;
+/** set from attribute to first baseline */
+@property (nonatomic, readonly) CATLayout *firstBaseline    NS_AVAILABLE_IOS(8_0);;
+/** set from attribute to last baseline */
+@property (nonatomic, readonly) CATLayout *lastBaseline;
 
 /** set from attribute to centerX */
 @property (nonatomic, readonly) CATLayout *centerX;
@@ -244,6 +248,10 @@
 @property (nonatomic, readonly) CATAlign *trailing;
 /** set from & to attribute to baseline */
 @property (nonatomic, readonly) CATAlign *baseline;
+/** set from & to attribute to first baseline */
+@property (nonatomic, readonly) CATAlign *firstBaseline   NS_AVAILABLE_IOS(8_0);;
+/** set from & to attribute to last baseline */
+@property (nonatomic, readonly) CATAlign *lastBaseline;
 
 /** set from & to attribute to centerX */
 @property (nonatomic, readonly) CATAlign *centerX;
