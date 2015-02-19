@@ -1,19 +1,23 @@
 //
 //  ViewController.m
-//  CATLayout
+//  Demo
 //
-//  Created by wit on 15/1/8.
+//  Created by wit on 15/2/19.
 //  Copyright (c) 2015年 cat. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "UIView+CATLayout.h"
 
+@interface ViewController ()
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     // auto layout
     UIView *container1 = [[UIView alloc] init];
     container1.translatesAutoresizingMaskIntoConstraints = NO;
